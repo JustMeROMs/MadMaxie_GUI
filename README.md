@@ -1,9 +1,10 @@
 MadMAXIE GUI v1.0.0 Windows for Chia and Flax.                
                                                                                                                                                     
-                                                                                                                                                    
-  
-
+                                                                                                                                                  																
 Designed on v0.0.6
+
+Attention new Madmax GUI Manager Dual Plotter v1.1.1 out based on stotiks v0.1.1 which supports pools now - https://github.com/JustMeROMs/MadMaxie_GUI/releases/tag/v1.1.1
+
 
   
 chia-plotter (pipelined multi-threaded)
