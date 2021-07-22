@@ -1,6 +1,6 @@
  
 
-Mad Maxie – Windows GUI/Manager for madMax plotter for Chia, Flax, Goji, Seno, Spare Coin.
+<h1>Mad Maxie – Windows GUI/Manager for madMax plotter for Chia, Flax, Goji, Seno, Spare Coin.</h1>
 
 Mad Maxie is a Windows Forms application oriented to provide a more usable user interface for the madMax chia plotter.
 
