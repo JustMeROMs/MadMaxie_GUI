@@ -110,6 +110,9 @@ By JustMe ROMs -  https://github.com/JustMeROMs/MadMaxie_GUI
 **Your donation will help me build new versions:**
 
 XCH: xch12zn2c05g5m0fr5r6ytyn0v3q5qfu80wyapgvzrhkm5g79fdrxtzsgus777
+  
 XFX: xfx1aq4edjr2fx3l65uennly5m72c62gavmvyj7r5cfq6wmf022y0zwqhd8hvg
+  
 BTC: 1E4Rwk4Afw49Vfi15Ee8iY8Z21Yw8cjFtq
+  
 ETH: 0x0f90dc50b87934cc4ddf1259aa7168aa4b4a37a6
