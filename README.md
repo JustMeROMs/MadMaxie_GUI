@@ -1,92 +1,107 @@
-MadMAXIE GUI v1.0.0 Windows for Chia and Flax.                
-                                                                                                                                                    
-                                                                                                                                                  																
-Designed on v0.0.6
+ 
 
-Attention new Madmax GUI Manager Dual Plotter v1.1.1 out based on stotiks v0.1.1 which supports pools now - https://github.com/JustMeROMs/MadMaxie_GUI/releases/tag/v1.1.1
+Mad Maxie – Windows GUI/Manager for madMax plotter for Chia, Flax, Goji, Seno, Spare Coin.
 
+Mad Maxie is a Windows Forms application oriented to provide a more usable user interface for the madMax chia plotter.
 
-  
-chia-plotter (pipelined multi-threaded)
-
-This is a new implementation of a chia plotter which is designed as a processing pipeline, similar to how GPUs work, only the "cores" are normal software CPU threads.
-
-As a result this plotter is able to fully max out any storage device's bandwidth, simply by increasing the number of "cores", ie. threads.
-
-Usage
-Join the Discord for support: https://discord.gg/YJ4GSMMY
+https://prnt.sc/1eckqy0
+https://prnt.sc/1eclj01
 
 
-What I have done is take the briliant work from https://github.com/madMAx43v3r/chia-plotter#chia-plotter-pipelined-multi-threaded
-and from https://github.com/stotiks/chia-plotter/releases/ and created a front end windows gui, this is the 1st release, and there is more features to be released
-in the next version comming real soon. This Gui will also work with Flax and Chia.
+Features
 
+•	Multiple final destinations.
+You can add multiple final destinations, Mad Maxie will alternate the final destination for each plotting process using both plot windows.
 
-For <poolkey> and <farmerkey> see output of `chia keys show`.
-<tmpdir> needs about 220 GiB space, it will handle about 25% of all writes. (Examples: './', '/mnt/tmp/')
-<tmpdir2> needs about 110 GiB space and ideally is a RAM drive, it will handle about 75% of all writes.
-Combined (tmpdir + tmpdir2) peak disk usage is less than 256 GiB.
-In case of <count> != 1, you may press Ctrl-C for graceful termination after current plot is finished or double Ctrl-c to terminate immediatelly\
+•	Multiple pools and combined solo and pool plotting
+Mad Maxie, you can dual plot to one pool or solo plot with added delay for second plot, or you can Plot on 2 different pools or solo plot and pool plot same time.
+
+•	Extra improvements/Features and user path selections
+There are some tweaks and hacks to improve stability AND performance of the plotter process, have added user path to select where madMax Stotiks exe file is located, delay time to stagger plot on plotter 2 and 2 output windows to view the plotting process on each plot. Save features so you can save your settings and not have to retype each time you change pools or settings etc.
+
+Tools Menu there is Chia, Flax, Goji, Seno Spare, 
+1.	plot checker
+2.	start/stop farmer
+3.	start/stop harvester
+4.	Show Keys
+5.	Show NFT keys
+6.	Show Version
+7.	Many more
+
+What do abbreviations mean
+
+1.	PCA = Pool Contract Address (for mining on pools)
+2.	PK = Pool keys (for solo mining)
+3.	FK = Farmer keys
 
 Usage:
   chia_plot [OPTION...]
 
   -n, --count arg      Number of plots to create (default = 1, -1 = infinite)
-	
   -r, --threads arg    Number of threads (default = 4)
-	
   -u, --buckets arg    Number of buckets (default = 256)
-	
   -v, --buckets3 arg   Number of buckets for phase 3+4 (default = buckets)
-	
   -t, --tmpdir arg     Temporary directory, needs ~220 GiB (default = $PWD)
-	
   -2, --tmpdir2 arg    Temporary directory 2, needs ~110 GiB [RAM] (default = <tmpdir>)
-	
   -d, --finaldir arg   Final directory (default = <tmpdir>)
-	
+  -w, --waitforcopy    Wait for copy to start next plot
   -p, --poolkey arg    Pool Public Key (48 bytes)
-	
+  -c, --contract arg   Pool Contract Address (62 chars)
   -f, --farmerkey arg  Farmer Public Key (48 bytes)
-	
   -G, --tmptoggle      Alternate tmpdir/tmpdir2 (default = false)
+  -h, --help           Print help
+  -K, --rmulti2        Thread multiplier for P2 (default = 1)
+
+Future development.
 	
-      --hwinfo         Print information regarding underlying hardware
+1.	A Linux version maybe
+2.	Added Advance features
+3.	Many more goodies coming next release
+
+Change log:
 	
-      --help           Print help
-	  
-Make sure to crank up <threads> if you have plenty of cores, the default is 4. Depending on the phase more threads will be launched, the setting is just a multiplier.
+25/06/2021 - V1.0.0 Initial release
+•	may contain some bugs
+•	screen shot - https://prnt.sc/166jngx
+	
 
-RAM usage depends on <threads> and <buckets>. With the new default of 256 buckets it's about 0.5 GB per thread at most.
+12/07/2021 - v1.1.1 - Added Features
+	
+• Added Dual plots for multiply pools or combine solo and pool
+• Added second Plot delay timer
+• Added chia, flax, Goji, Seno Plot checker, show keys, start/stop farmer, start/stop harvester
+• Added save profiles so you don't have to retype all the time when changing pools or address and settings
+• Added stability and code improvements and plot processing
+• Fixed folder options
+• Changed theme
 
--G option will alternate the temp dirs used while plotting to give each one, tmpdir and tmpdir2, equal usage. The first plot creation will use tmpdir and tmpdir2 as expected. 
-The next run, if -n equals 2 or more, will swap the order to tmpdir2 and tmpdir. 
-The next run swaps again to tmpdir and tmpdir2. This will occur until the number of plots created is reached or until stopped.
+22/07/2021 - v1.1.2 - Added Features
 
-
-Youtube CHannel : https://www.youtube.com/channel/UC8u6GqwR7oP9FHtVhS0iFRw
-
-
-Change log: 
-
-25/06/2021 - V1.0.0 Intial release
-
-- may contain some bugs
-- screen shot - https://prnt.sc/166jngx
-
-
-TBA - v1.0.1 - Added Features 
-
-- Coming soon
+•	Add Spare coin
+•	Added CMD Window
+•	Added CPU and Ram usage
+•	Added Chia Faucet
+•	Added temp1, Temp2 and Final HDD destination space available
+•	Trimmed the code up
 
 
+
+
+Big Thank you to the following:
+	
+madMAx43v3r - https://github.com/madMAx43v3r
+stotiks - https://github.com/stotiks/chia-plotter/releases
+Flax Devs - https://flaxnetwork.org/
+Goji Devs – https://getgoji.net/
+Seno Devs - https://seno.uno/
+Bozniack, flux103, Big T, Travola, Gutspiller
+	
+And most important Mad Maxie our Cavoodle Puppy 😊
+By JustMe ROMs -  https://github.com/JustMeROMs/MadMaxie_GUI
 
 Your donation will help me build new versions:
-
+	
 XCH: xch12zn2c05g5m0fr5r6ytyn0v3q5qfu80wyapgvzrhkm5g79fdrxtzsgus777
-	
 XFX: xfx1aq4edjr2fx3l65uennly5m72c62gavmvyj7r5cfq6wmf022y0zwqhd8hvg
-	
 BTC: 1E4Rwk4Afw49Vfi15Ee8iY8Z21Yw8cjFtq
-	
 ETH: 0x0f90dc50b87934cc4ddf1259aa7168aa4b4a37a6
