@@ -1,5 +1,7 @@
 ### Mad Maxie – Windows GUI/Manager Advance dual plotter for madMax - Chia, Flax, Goji, Seno, Spare Coin.
 
+Latest- https://github.com/JustMeROMs/MadMaxie_GUI/releases/tag/113
+
 ![MaxMaxie v1 1 2a](https://user-images.githubusercontent.com/83911433/126649188-4aff40ea-cd6d-46e5-9d6a-6fb34d57e1b5.JPG)
 
 
@@ -182,6 +184,7 @@ Flax Devs - https://flaxnetwork.org/
 Goji Devs – https://getgoji.net/
   
 Seno Devs - https://seno.uno/
+
   
 Bozniack, flux103, Big T, Travola, Gutspiller And most important Mad Maxie our Cavoodle Puppy 😊
 
