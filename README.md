@@ -2,6 +2,8 @@
 
 Latest- https://github.com/JustMeROMs/MadMaxie_GUI/releases/tag/113
 
+Discord Channel : https://discord.gg/2BH4mvBN
+
 ![MaxMaxie v1 1 2a](https://user-images.githubusercontent.com/83911433/126649188-4aff40ea-cd6d-46e5-9d6a-6fb34d57e1b5.JPG)
 
 
